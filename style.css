@@ -1,50 +1,58 @@
-/* General page styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* style.css */
+html, body {
+    height: 100%; /* Цял екран */
     margin: 0;
     padding: 0;
-    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-/* Header styling */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(32, 32, 32, 0.8); /* Леко прозрачен фон */
 }
 
-/* Main content styling */
 main {
-    margin: 20px;
+    height: 80vh; /* Целият екран */
+    background-image: url('rest.jpg'); /* Замени с пътя към изображението ти */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* Хоризонтално центриране */
+    align-items: center; /* Вертикално центриране */
 }
 
-p {
-    font-size: 18px;
-    color: #333;
+main .content {
+    text-align: center;
+    /* Премахваме прозрачния фон */
+    padding: 20px;
+    border-radius: 10px; /* Може да се премахне, ако не искаш заоблени краища */
+
 }
 
-/* Button styling */
-.btn {
-    background-color: #f30707;
+main p {
+    font-size: 24px;
+    margin-bottom: 20px; /* Разстояние между текста и бутона */
+    color: #fff; /* Променяме цвета на текста, за да се вижда на фона */
+}
+
+button.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
     color: white;
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
     border-radius: 5px;
-    font-size: 16px;
+    cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+button.btn:hover {
+    background-color: #218838;
 }
 
-/* Footer styling */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    background-color:  rgba(32, 32, 32, 0.8); /* Леко прозрачен фон */
 }
